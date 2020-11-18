@@ -26,4 +26,6 @@ webPush.sendNotification(
     pushSubscription,
     payload,
     options
-);
+).catch(err=> {
+    console.log(err);
+});
